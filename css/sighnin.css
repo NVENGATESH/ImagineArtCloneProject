@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+
+    /* ------font family------ */
+    --ff-primery:"Roboto", sans-serif;
+    --ff-secondary:"Inter", sans-serif;
+    --ff-desighn:"Satisfy", cursive;
+    --ff-brand:"Margarine", sans-serif;
+    
+
+
+    /* colors */
+
+
+    --clr-white:#FFFFFF;
+    --clr-light-RED-1:#B70808;
+    --clr-light-RED-2:#8C0402;
+    --clr-light-RED-3:#630001;
+    --clr-grey-1:#102a42;
+    --clr-grey-2:#617d98;
+    --clr-grey-3:#f1f5f8;
+    --clr-primary:#f53b57;
+    --clr-primary-light:#f04660;
+    --clr-secondary:#e9b949;
+
+
+    --clr-bg: #1b1b1b;             /* Dark background */
+    --clr-accent: #B10808;         /* Iconic red for Akatsuki */
+    --clr-text: #f1f5f8;           /* Light text for readability */
+    --clr-shadow: #292929;         /* Deep shadow */
+    --clr-hover: #E91E63; 
+
+
+
+
+    --bg-colour: #1b1b1b;
+    --neutral-white: 255 255 255;
+
+
+    /* transition */
+    --clr-transition: 1.5s linear;
+  
+
+
+
+}
+h1{
+  font-family: var(--ff-primery);
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+/* nav  start*/
+
+
+
+
+
+  .akatsuki-nav {
+    /* position: fixed !important; */
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: var(--clr-white);
+
+    overflow: hidden !important;
+    /* box-shadow: 0px 0px 10px black; */
+    
+   
+}
+.akatsuki-nav a {
+    color: black !important;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+    font-family: var(--ff-brand);
+    position: relative;
+    display: inline-block; 
+  }
+  
+.akatsuki-nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: #d60505;
+    transition: width 0.3s;
+  }
+  .akatsuki-nav a:hover::before {
+    width: 100%; 
+  }
+
+  /* Responsive */
+  @media (min-width: 800px) {
+    .center-menu {
+      display: flex !important;
+      justify-content: center;
+    
+      flex: 1;
+    }
+  }
+
+
+
+.sighnup{
+    width: 100%;
+    
+    height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+p{
+    text-align: center;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    padding: 20px 50px;
+    box-shadow: 0px 0px 12px black;
+}
+.card .email ,.card .Pass ,.card .last{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    outline: none;
+   border: 1px solid gray;
+   overflow: hidden
+}
+label{
+    margin-top: 10px;
+}
+.card button{
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    color: white;
+   background-color: #f04660;
+   outline: none;
+    padding: 15px;
+}
+.radiobtn{
+    width: 40px;
+}

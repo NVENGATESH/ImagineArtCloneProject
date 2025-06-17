@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+
+    /* ------font family------ */
+    --ff-primery:"Roboto", sans-serif;
+    --ff-secondary:"Inter", sans-serif;
+    --ff-desighn:"Satisfy", cursive;
+    --ff-brand:"Margarine", sans-serif;
+    
+
+
+    /* colors */
+
+
+    --clr-white:#FFFFFF;
+    --clr-light-RED-1:#B70808;
+    --clr-light-RED-2:#8C0402;
+    --clr-light-RED-3:#630001;
+    --clr-grey-1:#102a42;
+    --clr-grey-2:#617d98;
+    --clr-grey-3:#f1f5f8;
+    --clr-primary:#f53b57;
+    --clr-primary-light:#f04660;
+    --clr-secondary:#e9b949;
+
+
+    --clr-bg: #1b1b1b;             /* Dark background */
+    --clr-accent: #B10808;         /* Iconic red for Akatsuki */
+    --clr-text: #f1f5f8;           /* Light text for readability */
+    --clr-shadow: #292929;         /* Deep shadow */
+    --clr-hover: #E91E63; 
+
+
+
+
+    --bg-colour: #1b1b1b;
+    --neutral-white: 255 255 255;
+
+
+    /* transition */
+    --clr-transition: 1.5s linear;
+  
+
+
+
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+/* nav  start*/
+
+
+
+
+  .akatsuki-nav {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: var(--clr-white);
+
+    overflow: hidden !important;
+    box-shadow: 0px 0px 10px black;
+    
+   
+}
+.akatsuki-nav a {
+  color: black !important;
+  font-size: 16px;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+  font-family: var(--ff-brand);
+  position: relative;
+  display: inline-block; 
+}
+
+.akatsuki-nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; 
+  background-color: #d60505;
+  transition: width 0.3s;
+}
+.akatsuki-nav a:hover::before {
+  width: 100%; 
+}
+
+/* navBar Responcive code */
+@media (min-width: 800px) {
+  .center-menu {
+    display: flex !important;
+    justify-content: center;
+  
+    flex: 1;
+  }
+}
+
+/* navbar end */
+
+
+
+/* header */
+
+.headersection{
+    margin-top: 90px;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+.containers{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+   padding-top: 80px;
+   padding-bottom: 100px;
+    flex-direction: column;
+    text-align: center;
+  
+}
+.content{
+    width: 100%;
+margin-top: 50px;
+}
+.content p{
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+ 
+    
+}
+.content h1{
+    font-size: 80px;
+    
+}
+.content button{
+border: none;
+padding: 20px 30px;
+margin-top: 20px;
+border-radius: 15px;
+background-color: #d400e3;
+color: white;
+}
+
+.imagecontentconiner {
+    width: 100%;
+    height: 100%;
+  
+    background-color: #617d98;
+}
+.imagecontentconiner .imgs{
+    width: 100px;
+    height: 150px;
+    position: absolute;
+
+
+}
+
+.img1{
+    top: 15%;
+    left: 3%;
+   
+}
+
+.img2{
+    top: 40%;
+    
+ left: 8%;
+}
+.img2 img{
+    width: 140px !important;
+    height: 180px !important;
+}
+.img3{
+    top: 70%;
+    left: 15%;
+}
+
+.img4{
+    top: 15%;
+    right: 3%;
+    bottom: 10px;
+}
+.img5{
+    top: 40%;
+    right: 8%;
+    
+}
+
+.img5 img{
+    width: 140px !important;
+    height: 180px !important;
+}
+
+.img6{
+    top: 70%;
+    right: 13%;
+    
+}
+
+
+
+
+.imgs img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+object-fit: cover;
+
+}
+
+
+/* Resonsive */
+@media (max-width:900px){
+    .imagecontentconiner {
+
+        display: none;
+    }
+}
+
+@media (min-width:900px) and (max-width:1200px){
+
+    .content{
+        width: 100%;
+    margin-top: 50px;
+    }
+    .content p{
+        font-size: 18px;
+        width: 50%;
+        margin: auto;
+     
+        
+    }
+    .content h1{
+        font-size: 50px;
+        
+    }
+    
+    
+}
+
+@media (min-width:600px) and (max-width:900px){
+
+    .content{
+        width: 100%;
+    margin-top: 50px;
+    }
+    .content p{
+        font-size: 20px;
+        width: 70%;
+        margin: auto;
+     
+        
+    }
+    .content h1{
+        font-size: 70px;
+        
+    }
+    
+    
+}
+
+/* header end */
+
+
+
+
+
+  /* AffilateProgram creating start */
+  .AffilateProgram{
+    width: 100%;
+    min-height: 50vh;
+    
+    color: black;
+
+    
+  }
+  .AffilateConatiner{
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding: 5px;
+  }
+  .AffilateConatiner h1{
+    text-align: center;
+
+  }
+.Affilatecardconatiner{
+  width: 100%;
+  height: 100%;
+  display: flex;justify-content: center;
+align-items: center;
+gap: 10px;
+margin-top: 30px;
+margin-bottom: 20px;
+flex-wrap: wrap;
+}
+.Affilatecard{
+  width: 330px;
+  height: 300px;
+  background-color: transparent;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  gap: 10px;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px black;
+  transition: transform 0.3s ease;
+}
+.Affilatecard:hover{
+  transform: scale(1.05);
+}
+.Affilatecard .affimgcon{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.affimgcon img{
+  width: 100%;
+  height: 100%;
+}
+
+.Affilatecard span i{
+  font-size:50px;
+  color: white;
+  background: linear-gradient(135deg, #d400e3, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  
+}
+.Affilatecard h1{
+font-size: 25px;
+}
+
+/* creators end */
+
+
+
+
+
+/* 
+Akkatsuki-quotes-section
+*/
+
+
+.Akkatsuki-quotes-section{
+    width: 100%;
+    min-height: 100vh;
+   display: flex;
+    justify-content: center; 
+   align-items: center; 
+   
+  
+    overflow: hidden;
+    padding-top: 40px;
+
+}
+.container h1{
+    text-align: center;
+}
+
+
+.notes-all-conatiner{
+    display: grid; 
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      gap: 20px; 
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      place-items: center;
+     
+  }
+  
+  .card {
+      max-width: 320px;
+      max-height: 400px;
+      position: relative;
+     
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card .image-container {
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .card .image-container::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, #119aa1 10%, transparent);
+      transition: 0.5s;
+      z-index: 1;
+  }
+  
+  .card:hover .image-container::before {
+      bottom: 0;
+   
+  }
+  
+  .card .image-container img {
+      width: 100%;
+      transition: 0.5s;
+      
+  }
+  .card:hover .image-container img{
+      transform: translateY(-50px);
+      filter: blur(2px);
+  }
+  
+  .card .details{
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  padding: 20px;
+  z-index: -1;
+  transition: 0.5s ;
+  text-align: center;
+  color: white;
+  }
+  
+ 
+  .card:hover .details{
+  bottom: 40px;   
+  z-index: 2; 
+  }
+   .details p{
+    font-size: 20px;
+    text-align: center;
+  }
+  
+ 
+  
+ 
+
+/* footersection */
+
+.footersection{
+    width: 100%;
+    min-height: 60vh;
+    background-color: #c7c7c7;
+  }
+  
+  .fooetrconatiner{
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  .fierseffotersection{
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-content: center;
+    
+  }
+  .fierseffotersection a{
+    color: black;
+    text-decoration: none;
+  }
+  .logoandnamefooter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* imgconatinerfooter */
+  .imgconatinerfooter{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    
+  }
+  .imgconatinerfooter img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .lineconataniner{
+    width: 100%;
+  
+  }
+  .lineconataniner p{
+    width: 100%;
+    height: 2px;
+    background-color: beige;
+  }
+  
+  
+  .secoundfootersection{
+    width: 100%;
+  
+    display: flex;
+    padding: 64px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .secoundfootersection span i{
+    font-size: 30px;
+  }

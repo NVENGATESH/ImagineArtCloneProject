@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+
+    /* ------font family------ */
+    --ff-primery:"Roboto", sans-serif;
+    --ff-secondary:"Inter", sans-serif;
+    --ff-desighn:"Satisfy", cursive;
+    --ff-brand:"Margarine", sans-serif;
+    
+
+
+    /* colors */
+
+    --clr-white:#FFFFFF;
+    --clr-light-RED-1:#B70808;
+    --clr-light-RED-2:#8C0402;
+    --clr-light-RED-3:#630001;
+    --clr-grey-1:#102a42;
+    --clr-grey-2:#617d98;
+    --clr-grey-3:#f1f5f8;
+    --clr-primary:#f53b57;
+    --clr-primary-light:#f04660;
+    --clr-secondary:#e9b949;
+
+
+    --clr-bg: #1b1b1b;             /* Dark background */
+    --clr-accent: #B10808;         /* Iconic red for Akatsuki */
+    --clr-text: #f1f5f8;           /* Light text for readability */
+    --clr-shadow: #292929;         /* Deep shadow */
+    --clr-hover: #E91E63; 
+
+    --bg-colour: #1b1b1b;
+    --neutral-white: 255 255 255;
+
+
+    /* transition */
+    --clr-transition:  transform 0.3s ease;;
+  
+
+
+
+}
+h1{
+  font-family: var(--ff-primery);
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+/* nav  start*/
+
+
+
+  .akatsuki-nav {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: var(--clr-white);
+
+    overflow: hidden !important;
+    
+    
+   
+}
+.akatsuki-nav a {
+  color: black !important;
+  font-size: 16px;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+  font-family: var(--ff-brand);
+  position: relative;
+  display: inline-block; 
+}
+
+
+
+.akatsuki-nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; 
+  background-color: #d60505;
+  transition: width 0.3s;
+
+
+}
+.akatsuki-nav a:hover::before {
+  width: 100%; 
+}
+
+/* navBar Responcive code */
+@media (min-width: 800px) {
+  .center-menu {
+    display: flex !important;
+    justify-content: center;
+  
+    flex: 1;
+  }
+}
+
+/* navabar end */
+
+
+
+
+
+
+
+/* headesection */
+.homeContainer {
+    width: 100%;
+    min-height: 100vh;
+    padding: 200px 20px 20px 20px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-image: url(/ImagineArt/images/blog/bacround-griadient.png);
+   background-size: cover;
+   background-attachment: fixed;
+
+
+    
+  }
+
+  .firstContainer {
+    width: 100%;
+    max-width: 1200px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .searchBoxContainer {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .searchBoxContainer input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+  }
+
+  .searchBoxContainer i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #555;
+  }
+
+  .btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .btns p {
+    padding: 10px 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btns p:hover {
+    background-color: red;
+    color: white;
+  }
+
+
+
+  /* Second Container (Blog Posts) */
+  .secondContainer {
+    width: 100%;
+    max-width: 1200px;
+  
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .wholeContentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .thisContainer {
+    display: flex;
+    flex-wrap: wrap;
+   
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 0px;
+    max-width: 900px;
+  }
+
+  .fImageContainer {
+    flex: 1 1 300px;
+
+    min-height: 300px;
+    max-height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .fImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .secondContentContainer {
+    flex: 1 1 300px;
+  
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 100px;
+  }
+  .lasthomeconainer{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+  }
+  .lasthomeconainerimage{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+
+  }
+  .lasthomeconainerimage img{
+    width: 100%;
+    height: 100%;
+  }
+  .lasthomeconainer p{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .thisContainer {
+      flex-direction: column;
+    }
+   
+  }
+
+  @media (min-width: 320px) and (max-width: 420px) {
+   .homeContainer{
+    padding: 10px;
+    padding-top: 150px;
+   }
+   .firstContainer {
+padding: 13px;
+   }
+   .secondContainer {
+
+padding: 5px;
+   }
+   .wholeContentContainer {
+    padding: 5px;
+   }
+   .secondContentContainer {
+    padding: 5px;
+   }
+  }
+
+  @media (min-width: 420px) and (max-width: 600px) {
+    .homeContainer{
+     padding: 10px;
+     padding-top: 150px;
+    }
+    .secondContentContainer {
+     padding: 10px;
+    }
+   }
+   @media (min-width: 600px) and (max-width: 768px) {
+    .homeContainer{
+     padding: 10px;
+     padding-top: 150px;
+    }
+    .secondContentContainer {
+     padding: 15px;
+     gap: 10px;
+    }
+   }
+
+
+
+
+
+   
+  /* aitextgenerorsection */
+
+  .aitextgenerorsection{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(/ImagineArt/images/blog/16347.png);
+    background-size: contain;
+    padding: 5px;
+  padding-bottom: 30px;
+  }
+
+  .aitextgenerorsection h1:nth-child(1){
+    margin: 30px;
+  }
+  .textConainer{
+    width: 100%;
+    height: 100%;
+   
+    display: flex;justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+.cards{
+    width: 400px;
+    height: 400px;
+    border: 1px solid gray;
+    border-radius: 20px;
+  
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+.cards:hover{
+  transform: scale(1.05);
+}
+  .imgconainer{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+
+   
+  }
+  .imgconainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contentConatiner{
+    width: 100%;
+    height: 40%;
+    padding: 20px;
+  }
+
+.lastcon{
+  
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.lastcon p{
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+  .imgcon{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+
+  }
+  .imgcon img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+  
+
+/* footersection */
+
+.footersection{
+  width: 100%;
+  min-height: 60vh;
+  background-color: #c7c7c7;
+}
+
+.fooetrconatiner{
+  width: 100%;
+  height: 100%;
+
+}
+
+.fierseffotersection{
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-content: center;
+  
+}
+.fierseffotersection a{
+  color: black;
+  text-decoration: none;
+}
+.logoandnamefooter{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* imgconatinerfooter */
+.imgconatinerfooter{
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  
+}
+.imgconatinerfooter img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.lineconataniner{
+  width: 100%;
+
+}
+.lineconataniner p{
+  width: 100%;
+  height: 2px;
+  background-color: beige;
+}
+
+
+.secoundfootersection{
+  width: 100%;
+
+  display: flex;
+  padding: 64px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.secoundfootersection span i{
+  font-size: 30px;
+}
