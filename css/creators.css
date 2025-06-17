@@ -277,7 +277,28 @@ object-fit: cover;
     
     
 }
-
+@media (min-width:320px) and (max-width:420px){
+.content{
+        width: 100%;
+    margin-top: 50px;
+    }
+    .content p{
+        font-size: 25px;
+        width: 90%;
+        margin: auto;
+     
+        
+    }
+    .content h1{
+        font-size: 40px;
+        margin-top: 20px;
+        
+        
+    }
+   content h1:nth-last-child(1) {
+  margin-bottom: 30px;
+}
+}
 /* header end */
 
 
