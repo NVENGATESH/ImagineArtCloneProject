@@ -296,7 +296,8 @@ object-fit: cover;
         
     }
    content h1:nth-last-child(1) {
-  margin-bottom: 30px;
+  margin-bottom: 3
+  0px;
 }
 }
 /* header end */
